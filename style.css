@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center; 
+    background: url("https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    background-size: cover;
+    color:azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 100em;
+    background: rgba(29, 48, 100, 0.8);
+    margin: 0 5rem;
+    padding-right: 2rem;
+    padding-left: 0.4rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 27rem;
+}
+
+.container2{
+    display: flex;
+    margin-top: 3em;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.new-debt{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(81, 145, 145);
+    width: 15em;
+    margin-right: 2em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    margin-left: 4em;
+    border-radius: 5px;
+}
+
+.new-debt h2{
+    text-align: center;
+}
+
+.alert{
+    background-color: rgb(224, 195, 200);
+    color: rgb(16, 9, 75);
+    text-align: center;
+    margin-left: 1rem;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.active.alert{
+    visibility: hidden;
+}
+
+.new-debtsub{
+   margin-top: -1.5em;
+    padding: 0 2em;
+}
+
+.active.new-debtsub{
+    margin-top: 0.5em;
+}
+
+.title{
+    margin-bottom: 2em;
+}
+
+.title::placeholder{
+    color: rgb(172, 169, 169);
+}
+
+.btn1{
+    margin-top: 2em;
+    margin-left: 4.7em;
+    padding: 0.5em 0.5em;
+   cursor: pointer;
+}
+
+.saved{
+    margin-left: 1em;
+}
+
+.my-debt{
+    background-color: rgb(81, 145, 145);
+    width: 15em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    margin-right: 2.2em;
+}
+
+.my-debt h2{
+    text-align: center;
+    margin-left: -1.5em;
+}
+
+.btn2{
+   margin-top: 1em;
+   margin-left: 3.5em;
+   padding: 0.5em;
+   cursor: pointer;
+}
+
+
+input{
+    margin-top: 0.5em;
+}
+
+.container3{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.records{
+    background-color: rgb(18, 109, 18);
+    height: 2em;
+    width: 30em;
+    text-align: center;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    border-radius: 5px;
+}
+
+.saved-records{
+    background-color: rgb(54, 28, 78);
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 4.7em;
+    height: 1em;
+    text-align: center;
+    padding: 1em;
+    width: 20em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.name{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.name:hover{
+    color: rgb(223, 12, 30); 
+}
+
+.name:active{
+    color: blue;
+}
+
+.delete{
+    cursor: pointer;
+    color: azure;
+}
+
+.delete:hover{
+    color: rgb(223, 12, 30);
+}
+
+.delete:active{
+    color: blue;
+}
+
+@media (max-width: 768px){
+    .container1{
+        width: 30em;
+        margin-right: 2em;
+    }
+
+    .my-debt{
+        margin-left: 2em;
+        margin-right: -1em;
+        width: 10em;
+    }
+
+    .title{
+        width: 7em;
+        background-color: azure;
+    }
+
+    .amount{
+        width: 7em;
+        background-color: azure;
+    }
+
+    .btn1{
+        margin-left: 2.2em;
+    }
+
+    .new-debt{
+        margin-left: 1em;
+        margin-right: -1.2em;
+        width: 10em;
+    }
+
+    .new-payment{
+        width: 7em;
+        background-color: azure;
+    }
+
+    .btn2{
+        margin-left: 1.7em;
+    }
+
+    .records{
+        width: 23em;
+        margin-left: 2.7em;
+    }
+
+    .saved-records{
+        width: 18em;
+    }
+}

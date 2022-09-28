@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Manager</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>DEBT MANAGER</h1>
+        <div class="container2">
+
+            <!-- NEW DEBT -->
+            <div class="new-debt">
+                <h2>NEW DEBT</h2>
+                <div class="alert active ">Field cannot be empty or negative</div>
+                <div class="new-debtsub">
+                <form class="new">
+                    <label for="text">TITLE <input type="text" class="title" placeholder="ENTER NAME OF DEBT"></label>
+                    <label for="number" > AMOUNT
+                        <input type="number" class="amount">
+                    </label>
+                        <button type="submit" class="btn1">ADD</button>
+                </form>
+            </div>
+            </div>
+
+            <!-- MY DEBT -->
+            <div class="my-debt">
+                <h2>MY DEBT</h2>
+                <div class="my-debtsub">
+                    <p>TITLE :<span  class="saved my-title">NAME</span></p>
+                <form class="update">
+                    <label for="number"> NEW PAYMENT
+                        <input type="number" class="new-payment">
+                    </label>
+                    <p>TOTAL PAYMENT <i class="fa-solid fa-naira-sign"></i><span class="saved total-payment">0</span></p>
+                    <p>BALANCE <i class="fa-solid fa-naira-sign"></i><span class="saved balance">0</span></p>
+                    <p>DEBT <i class="fa-solid fa-naira-sign"></i><span class="saved debt">0</span></p>
+                    <button type="submit" class="btn2">UPDATE</button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <!-- RECORDS -->
+        <div class="container3">
+            <div class="container4" id="recordsList">
+            <div class="records">RECORDS</div>
+                 <!--<div class="saved-records">
+                    <div class="name" data-id="${record.id}">${record.title}</div>
+                    <div class="delete" data-id="${record.id}">
+                        <i class="fa-solid fa-trash-can"></i>
+                 </div>
+                 </div>-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
