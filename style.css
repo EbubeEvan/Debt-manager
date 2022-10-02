@@ -177,22 +177,29 @@ input{
 @media (max-width: 768px){
     .container1{
         width: 30em;
-        margin-right: 2em;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    h1{
+        text-align: center;
+        margin-left: 1.22em;
+        margin-top: 15em;
     }
 
     .my-debt{
         margin-left: 2em;
-        margin-right: -1em;
+        margin-right: -0.8em;
         width: 10em;
     }
 
     .title{
-        width: 7em;
+        width: 7.7em;
         background-color: azure;
     }
 
     .amount{
-        width: 7em;
+        width: 7.7em;
         background-color: azure;
     }
 
@@ -202,12 +209,12 @@ input{
 
     .new-debt{
         margin-left: 1em;
-        margin-right: -1.2em;
+        margin-right: -1.6em;
         width: 10em;
     }
 
     .new-payment{
-        width: 7em;
+        width: 7.7em;
         background-color: azure;
     }
 
@@ -217,10 +224,11 @@ input{
 
     .records{
         width: 23em;
-        margin-left: 2.7em;
+        margin-left: 2.3em;
     }
 
     .saved-records{
         width: 18em;
+        margin-left: 3.7em;
     }
 }
